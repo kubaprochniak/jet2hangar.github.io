@@ -24,9 +24,12 @@ github_username:  jet2hangar
 
 # Build settings
 markdown: kramdown
-theme: minima
+#theme: minima
 plugins:
   - jekyll-feed
+
+sass:
+    sass_dir: ./_styles
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

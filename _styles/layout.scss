@@ -1,0 +1,23 @@
+//----------------
+//  LAYOUT
+//----------------
+
+body{
+    background-color: #FFF;
+    padding: 0;
+    margin: 0;
+}
+
+.padding{
+    padding: $base-unitx2;
+}
+
+.section{
+    padding: $base-unitx2;
+}
+
+.wrapper{
+    padding: $base-unit $base-unitx2;
+    max-width: $site-width;
+    margin: 0 auto;
+}

@@ -1,0 +1,22 @@
+//----------------
+//  HEADER NAV
+//----------------
+
+.header-nav{
+    // background-color: $dark;
+}
+
+.nav-list{
+    margin: 0;
+    list-style: none;
+    text-align: right;
+
+    &__item{
+        display: inline-block;
+    }
+
+    &__link{
+        // color: $light;
+        padding: 0 $base-unit;
+    }
+}
