@@ -1,0 +1,15 @@
+---
+---
+{% include head.html %}
+{% include navigation.html %}
+{% include header.html %}
+    <section class="wrapper">        
+        <ul>
+            {% for post in site.posts %}
+            <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+{% include footer.html %}

@@ -3,13 +3,13 @@
 //----------------
 
 .header-nav{
-    // background-color: $dark;
+    border-top:5px solid $primary-colour;
 }
 
 .nav-list{
+    padding: 0;
     margin: 0;
     list-style: none;
-    text-align: right;
 
     &__item{
         display: inline-block;

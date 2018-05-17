@@ -4,7 +4,8 @@
 
 
 // Colours
-$primary-colour: lightcoral;
+$primary-colour: #ec2727;
+$secondary-colour: lightcoral;
 $light: beige;
 $dark: #333;
 
@@ -12,4 +13,8 @@ $dark: #333;
 $base-unit: 12px;
 $base-unitx2: $base-unit * 2;
 
-$site-width: 1000px;
+$small: 767px;
+$medium: 1024px;
+$large: 1200px;
+
+$site-width: $medium;

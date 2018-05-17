@@ -20,4 +20,8 @@ body{
     padding: $base-unit $base-unitx2;
     max-width: $site-width;
     margin: 0 auto;
+
+    @include screen-bigger-than($small){
+        padding: $base-unit 0;
+    }
 }
