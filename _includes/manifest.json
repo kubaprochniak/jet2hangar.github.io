@@ -5,8 +5,7 @@
     "background_color": "#2b6fb1",
     "description": "Progressive web app proof of concept",
     "display": "fullscreen",
-    "scope": "",
-    "start_url": "",
+    "start_url": "/?utm_source=pwa",
     "icons": [
       {
         "src": "../favicons/icon-48x48.png",
