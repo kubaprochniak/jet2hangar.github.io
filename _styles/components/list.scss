@@ -8,10 +8,28 @@
     list-style: none;
 
     &__item{
+        border-bottom: 1px solid $light; 
+        padding-bottom: $base-unit;
     }
 
     &__link{
         display: inline-block;
         padding: $base-unit 0;
+    }
+
+    &__info{
+        font-size: 12px;
+        margin: 0;
+        font-style: italic;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__excerpt{
+
+    }
+
+    &__categories{
+        
     }
 }

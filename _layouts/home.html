@@ -8,6 +8,10 @@
             {% for post in site.posts %}
             <li class="list__item">
             <a class="list__link" href="{{ post.url }}">{{ post.title }}</a>
+                <p class="list__info">
+                    <span class="list__excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</span>
+                    <span class="list_categories">{{ post.categories }}</span>
+                </p>            
             </li>
             {% endfor %}
         </ul>
