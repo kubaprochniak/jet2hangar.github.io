@@ -4,10 +4,10 @@
 {% include navigation.html %}
 {% include header.html %}
     <section class="wrapper">        
-        <ul>
+        <ul class="list">
             {% for post in site.posts %}
-            <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
+            <li class="list__item">
+            <a class="list__link" href="{{ post.url }}">{{ post.title }}</a>
             </li>
             {% endfor %}
         </ul>
