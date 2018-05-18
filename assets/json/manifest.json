@@ -1,4 +1,4 @@
 ---
 ---
 
-{% include manifest.json %}
+{% include json/manifest.json %}
