@@ -8,16 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/bundle.css' | absolute_url }}">
     <script>
-        if ('serviceWorker' in navigator) {
-        console.log('CLIENT: service worker registration in progress.');
-        navigator.serviceWorker.register('{{ "assets/js/serviceworker.js" | absolute_url }}').then(function() {
-            console.log('CLIENT: service worker registration complete.');
-        }, function() {
-            console.log('CLIENT: service worker registration failure.');
-        });
-        } else {
-        console.log('CLIENT: service worker is not supported.');
-        }
+        {% include js/register-service-worker.js %}
     </script>
     <title>{{ site.title }}</title>
 </head>
