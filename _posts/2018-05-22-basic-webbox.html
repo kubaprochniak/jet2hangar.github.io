@@ -1,0 +1,30 @@
+---
+layout: post
+title: Basic Webbox worker setup
+date:   2018-05-22
+permalink: basic-webbox
+service-worker: webbox-worker.js
+categories: pwa
+tags: pwa manifest json service-worker webbox
+---
+
+<p>A basic setup of the webbox library.</p>
+
+<h4>Manifest file used on this page.</h4>
+
+{% highlight json %}
+{% include json/manifest.json %}
+{% endhighlight %}
+
+<h4>Webbox worker resitration method.</h4>
+
+{% highlight javascript %}
+{% include js/register-service-worker.js %}
+{% endhighlight %}
+
+<h4>Webbox worker setup.</h4>
+
+{% highlight javascript %}
+{% include js/{{ page.service-worker }} %}
+{% endhighlight %}
+

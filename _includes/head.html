@@ -39,11 +39,7 @@
     <!-- <link rel="icon" type="image/png" href="{{ site.url }}/favicon.png"> -->
 
     <script>
-    {% if page.service-worker %}
-        {% include js/{{page.service-worker}} %}
-    {% else %}
         {% include js/register-service-worker.js %}
-    {% endif %}
     </script>
     
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
