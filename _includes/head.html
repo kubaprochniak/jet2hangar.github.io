@@ -31,12 +31,15 @@
     {% if page.manifest %}
     <link rel="manifest" href="{{ site.url }}/assets/json/{{ page.manifest }}">
     {% endif %}
+
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/bundle.css' | absolute_url }}">
     <!-- <link rel="icon" type="image/png" href="{{ site.url }}/favicon.png"> -->
+
     <script>
         {% include js/register-service-worker.js %}
     </script>
+    
     <title>{{ site.title }}</title>
 </head>
 <body>
