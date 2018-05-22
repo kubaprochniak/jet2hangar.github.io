@@ -21,7 +21,7 @@ body{
     max-width: $site-width;
     margin: 0 auto;
 
-    @include screen-bigger-than($small){
+    @include screen-bigger-than($medium){
         padding: $base-unit 0;
     }
 }
