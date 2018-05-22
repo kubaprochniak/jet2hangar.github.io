@@ -1,0 +1,29 @@
+---
+layout: post
+title:  Default PWA example
+date:   2018-05-22
+permalink: default-pwa
+categories: pwa
+tags: pwa manifest json service-worker
+---
+
+<p>A prototype of a simple manifest file and a vanilla js service worker.</p>
+
+<h4>Manifest file used on this page.</h4>
+
+{% highlight json %}
+{% include json/manifest.json %}
+{% endhighlight %}
+
+<h4>Standard service worker resitration method.</h4>
+
+{% highlight javascript %}
+{% include js/register-service-worker.js %}
+{% endhighlight %}
+
+<h4>Basic service worker structure.</h4>
+
+{% highlight javascript %}
+{% include js/service-worker.js %}
+{% endhighlight %}
+
