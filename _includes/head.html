@@ -30,6 +30,8 @@
 
     {% if page.manifest %}
     <link rel="manifest" href="{{ site.url }}/assets/json/{{ page.manifest }}">
+    {% else %}
+    <link rel="manifest" href="{{ site.url }}/assets/json/manifest.json">
     {% endif %}
 
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -37,7 +39,11 @@
     <!-- <link rel="icon" type="image/png" href="{{ site.url }}/favicon.png"> -->
 
     <script>
+    {% if page.service-worker %}
+        {% include js/{{page.service-worker}} %}
+    {% else %}
         {% include js/register-service-worker.js %}
+    {% endif %}
     </script>
     
     <title>{{ site.title }}</title>
