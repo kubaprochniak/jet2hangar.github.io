@@ -37,6 +37,7 @@ kramdown:
   syntax_highlighter: rouge
 
 #theme: minima
+
 plugins:
   - jekyll-feed
 
@@ -44,6 +45,8 @@ sass:
     sass_dir: ./_styles
     style: compressed
     
+theme-colour: '#ec2727'
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
