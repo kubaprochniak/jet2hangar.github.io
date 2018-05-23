@@ -1,6 +1,7 @@
 const CACHE_NAME = 'v1::';
 const urlsToCache = [
-  '/'
+  '../../',
+  '../../bundle.css'
 ];
 
 // Listen for the install event, which fires when the service worker is installing
