@@ -1,7 +1,7 @@
 const CACHE_NAME = 'v1::';
 const urlsToCache = [
-  '../../',
-  '../../bundle.css'
+  '/',
+  '/bundle.css'
 ];
 
 // Listen for the install event, which fires when the service worker is installing
@@ -41,6 +41,7 @@ self.addEventListener('activate', event => {
 self.addEventListener('fetch', function(event) {
   // This lets us control the response
   // We pass in a promise that resolves with a response object
+  console.log('FETCH event added');
   event.respondWith(
     // Check whether we have a matching response for this request in our cache
     caches.match(event.request).then(response => {
