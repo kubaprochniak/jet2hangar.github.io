@@ -4,7 +4,7 @@
     "theme_color": "#3d8ede",
     "background_color": "#2b6fb1",
     "description": "Progressive web app proof of concept",
-    "display": "browser",
+    "display": "standalone",
     "start_url": "/",
     "icons": [
       {
