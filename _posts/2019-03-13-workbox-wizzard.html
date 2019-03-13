@@ -1,0 +1,31 @@
+---
+layout: post
+title: Wizzard Workbox cli worker setup
+date:   2019-03-13
+permalink: wizzard-webbox
+service-worker: ww.js
+categories: pwa
+tags: pwa manifest json service-worker workbox wizzard
+---
+
+<h3>Workbox cli</h3>
+
+<ul>
+    <li>
+        <a href="https://developers.google.com/web/tools/workbox/modules/workbox-cli" title="Workbox Wizzard setup" target="_blank">Workbox Wizzard setup</a>
+    </li>
+</ul>
+
+<ol>
+    <li>Run wizzard: <code>workbox wizard</code></li>
+    <li>Run SW Generator: <code>workbox generateSW path/to/config.js</code></li>
+</ol>
+
+
+
+<code>
+    {% highlight javascript %}
+    {% include js/{{ page.service-worker }} %}
+    {% endhighlight %}
+</code>
+
