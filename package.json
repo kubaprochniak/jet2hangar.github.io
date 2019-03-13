@@ -1,0 +1,22 @@
+{
+  "name": "jet2hangar.github.io",
+  "version": "1.0.0",
+  "description": "PWA playground",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jet2hangar/jet2hangar.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jet2hangar/jet2hangar.github.io/issues"
+  },
+  "homepage": "https://github.com/Jet2hangar/jet2hangar.github.io#readme",
+  "devDependencies": {
+    "workbox-cli": "4.1.0"
+  }
+}
