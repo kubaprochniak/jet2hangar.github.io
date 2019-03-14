@@ -27,31 +27,15 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404/index.html",
-    "revision": "a5b945e01a95155b032c32cd21e149da"
-  },
-  {
-    "url": "basic-webbox.html",
-    "revision": "73a58836f1a71ef1129a72d809af30d5"
+    "revision": "a3b6a20fc0249375c48119cdbf6c9f49"
   },
   {
     "url": "bundle.css",
     "revision": "2d6baf03363e43ee56732e6c2dcbc45b"
   },
   {
-    "url": "default-manifest.html",
-    "revision": "544289dac904fab1e5545bfe9b7adba1"
-  },
-  {
-    "url": "default-service-worker.html",
-    "revision": "2233a794bf2439041d40675c4d3c5dc8"
-  },
-  {
-    "url": "index.html",
-    "revision": "ea2141592ed930ef40f7530ac7e84592"
-  },
-  {
-    "url": "minimal-fetch.html",
-    "revision": "47057af8719e280a4e53e2e48b0a67cc"
+    "url": "offline.html",
+    "revision": "30beb260b655e1a878901d05bb563680"
   },
   {
     "url": "service-worker-minimal.js",
@@ -60,14 +44,6 @@ self.__precacheManifest = [
   {
     "url": "service-worker.js",
     "revision": "dc951b6526424ccaeec1ad67711b3054"
-  },
-  {
-    "url": "useful.html",
-    "revision": "b43463942a044b600943ee1d8ae56ec2"
-  },
-  {
-    "url": "wizzard-webbox.html",
-    "revision": "0e77e65c67cbb604db7fc20e9ecec297"
   },
   {
     "url": "workbox-config.js",
