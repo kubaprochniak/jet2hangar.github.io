@@ -5,9 +5,17 @@
 {% include header.html %}
     <section class="wrapper">        
         <ul class="list">
+            {% for post in site.posts %}
             <li class="list__item">
-                <p class="list__info">PushBots v1</p>
+            <a class="list__link" href="{{ post.url }}">{{ post.title }}</a>
+                <p class="list__info">
+                    <span class="list__excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</span>
+                </p>
+                {% for tag in post.tags %}
+                    <span class="list__tag">{{ tag }}</span>
+                {% endfor %}
             </li>
+            {% endfor %}
         </ul>
     </section>
 {% include footer.html %}
