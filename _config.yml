@@ -26,6 +26,9 @@ github_username:  jet2hangar
 # Options: https://jekyllrb.com/docs/permalinks/#builtinpermalinkstyles
 permalink: none
 
+host: localhost
+port: 4000
+
 # Build settings
 markdown: kramdown
 
