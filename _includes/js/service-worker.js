@@ -13,7 +13,9 @@ var version = 'v4::';
 */
 var offlineFundamentals = [
   '/',
-  '/bundle.css'
+  '/bundle.css',
+  '/assets/images/doh.jpg',
+  '/offline.html'
 ];
 
 /* The install event fires when the service worker is first installed.
@@ -87,9 +89,14 @@ self.addEventListener("fetch", function(event) {
         */
         var networked = fetch(event.request)
           // We handle the network request with success and failure scenarios.
-          .then(fetchedFromNetwork, unableToResolve)
-          // We should catch errors on the fetchedFromNetwork handler as well.
-          .catch(unableToResolve);
+          .then(fetchedFromNetwork, function(error) {
+            // When the cache is empty and the network also fails,
+            // we fall back to a generic "Offline" page.
+            return caches.match('/offline.html');
+          })
+          .catch(function(error) {
+            return caches.match('/offline.html');
+          })
 
         /* We return the cached response immediately if there is one, and fall
            back to waiting on the network as usual.
@@ -121,36 +128,6 @@ self.addEventListener("fetch", function(event) {
 
           // Return the response so that the promise is settled in fulfillment.
           return response;
-        }
-
-        /* When this method is called, it means we were unable to produce a response
-           from either the cache or the network. This is our opportunity to produce
-           a meaningful response even when all else fails. It's the last chance, so
-           you probably want to display a "Service Unavailable" view or a generic
-           error response.
-        */
-        function unableToResolve () {
-          /* There's a couple of things we can do here.
-             - Test the Accept header and then return one of the `offlineFundamentals`
-               e.g: `return caches.match('/some/cached/image.png')`
-             - You should also consider the origin. It's easier to decide what
-               "unavailable" means for requests against your origins than for requests
-               against a third party, such as an ad provider.
-             - Generate a Response programmaticaly, as shown below, and return that.
-          */
-
-          console.log('WORKER: fetch request failed in both cache and network.');
-
-          /* Here we're creating a response programmatically. The first parameter is the
-             response body, and the second one defines the options for the response.
-          */
-          return new Response('<h1>Service Unavailable</h1>', {
-            status: 503,
-            statusText: 'Service Unavailable',
-            headers: new Headers({
-              'Content-Type': 'text/html'
-            })
-          });
         }
       })
   );
