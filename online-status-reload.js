@@ -1,6 +1,5 @@
-window.addEventListener('online', ()=> {
-  window.location.reload()
-})
-window.addEventListener('offline', ()=> {
-  window.location.reload()
-})
+---
+# Clone source from the _includes
+---
+
+{% include js/online-status-reload.js %}
