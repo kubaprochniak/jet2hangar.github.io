@@ -1,6 +1,14 @@
 window.addEventListener('online', ()=> {
-  window.location.reload()
+  const offlineMessage = document.querySelector('#offline')
+  const offlinePage= document.querySelector('#offline-page')
+  if(offlinePage) {
+    window.location.reload()
+  }
+
+  offlineMessage.classList.remove('appear')
 })
+
 window.addEventListener('offline', ()=> {
-  window.location.reload()
+  const offlineMessage = document.querySelector('#offline')
+  offlineMessage.classList.add('appear')
 })
