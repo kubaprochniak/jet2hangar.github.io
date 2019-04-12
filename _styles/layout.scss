@@ -12,16 +12,16 @@ body{
     padding: $base-unitx2;
 }
 
-.section{
-    padding: $base-unitx2;
-}
+// .section{
+//     padding: $base-unitx2;
+// }
 
-.wrapper{
-    padding: $base-unit $base-unitx2;
-    max-width: $site-width;
-    margin: 0 auto;
+// .wrapper{
+//     padding: $base-unit $base-unitx2;
+//     max-width: $site-width;
+//     margin: 0 auto;
 
-    @include screen-bigger-than($medium){
-        padding: $base-unit 0;
-    }
-}
+//     @include screen-bigger-than($medium){
+//         padding: $base-unit 0;
+//     }
+// }

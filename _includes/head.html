@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
     <link rel="apple-touch-icon" href="/assets/favicons/bookmark/icon-bookmark-192x192.png">
     <link rel="apple-touch-icon" sizes="16x16" href="/assets/favicons/bookmark/icon-bookmark-16x16.png">
     <link rel="apple-touch-icon" sizes="32x32" href="/assets/favicons/bookmark/icon-bookmark-32x32.png">
@@ -27,22 +26,19 @@
     <!-- <meta name="msapplication-TileColor" content="#da532c ">
     <meta name="msapplication-TileImage" content="/assets/img/favicons/mstile-144x144.png?etag=8V/DcpiXqp9og1TKygQwUQ=="> -->
     <meta name="theme-color" content="{{ site.theme-colour }}">
-
     {% if page.manifest %}
     <link rel="manifest" href="{{ site.url }}/assets/json/{{ page.manifest }}">
     {% else %}
     <link rel="manifest" href="{{ site.url }}/assets/json/manifest.json">
     {% endif %}
-
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src="https://cdn.optimizely.com/js/13302150067.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/bundle.css' | absolute_url }}">
     <!-- <link rel="icon" type="image/png" href="{{ site.url }}/favicon.png"> -->
-
     <script>
         {% include js/register-service-worker.js %}
         {% include js/online-status-reload.js %}
     </script>
-    
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 </head>
 <body>
