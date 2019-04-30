@@ -1,0 +1,19 @@
+//----------------
+//  HEADER NAV
+//----------------
+
+#offline {
+    height: 0;
+    padding: 0 20px;
+    left: 0;
+    right: 0;
+    line-height: 30px;
+    background: #f00;
+    color: #fff;
+    transition: height 0.5s ease;
+    z-index: 1;
+}
+
+#offline.appear {
+    height: 30px;
+}
