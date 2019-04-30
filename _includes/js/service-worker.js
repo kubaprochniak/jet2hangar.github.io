@@ -5,14 +5,13 @@ console.log('WORKER: executing.');
 /* A version number is useful when updating the worker logic,
    allowing you to remove outdated cache entries during the update.
 */
-var version = 'v4::';
+var version = 'v1:service-worker::';
 
 /* These resources will be downloaded and cached by the service worker
    during the installation process. If any resource fails to be downloaded,
    then the service worker won't be installed either.
 */
 var offlineFundamentals = [
-  '/',
   '/bundle.css',
   '/assets/images/doh.jpg',
   '/offline.html'
