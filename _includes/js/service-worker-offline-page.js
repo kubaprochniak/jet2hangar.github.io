@@ -12,9 +12,12 @@ var version = 'v1:offline::';
    then the service worker won't be installed either.
 */
 var offlineFundamentals = [
-  '/bundle.css',
-  '/assets/images/doh.jpg',
-  '/offline.html'
+  '/offline.html',
+  '/assets/images/abta-logo.png',
+  '/assets/images/atol-custom.svg',
+  '/assets/images/logo.png',
+  '/assets/images/offline.jpg',
+  '/favicon.ico'
 ];
 
 /* The install event fires when the service worker is first installed.
